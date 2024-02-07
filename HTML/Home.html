@@ -4,22 +4,85 @@
     <meta charset="UTF-8">
     <meta name="author" content="Gabriel Hubert">
     <title>Home</title>
+    <script src="../JavaScript/add_minus"></script>
 </head>
 <body>
     <nav>
         <a href="Home.html">Home</a>
         <a href="PrimoTable.html">Primogems Table</a>
     </nav>
-    <h3>Daily Commissions</h3>
-    <h3>Event</h3>
-    <h3>Mail</h3>
-    <h3>Adventure</h3>
-    <h3>Quests</h3>
-    <h3>Achievements</h3>
-    <h3>Spiral Abyss</h3>
-    <h3>TCG</h3>
-    <h3>Serenitea Pot</h3>
-    <h3>Hangout Series</h3>
-    <h3>Game Tips/Tutorial</h3>
+    <form>
+        <h3>Daily Commissions</h3>
+        <button type="button" onclick="updateValue('subtract', 10, 'Dailies', 0)">-10</button>
+        <input type="number" id="Dailies" name="Dailies" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 10, 'Dailies', 60)">+10</button>
+
+        <h3>Event</h3>
+        <button type="button" onclick="updateValue('subtract', 50, 'Event', 0)">-50</button>
+        <button type="button" onclick="updateValue('subtract', 20, 'Event', 0)">-20</button>
+        <button type="button" onclick="updateValue('subtract', 10, 'Event', 0)">-10</button>
+        <input type="number" id="Event" name="Event" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 10, 'Event')">+10</button>
+        <button type="button" onclick="updateValue('add', 20, 'Event')">+20</button>
+        <button type="button" onclick="updateValue('add', 50, 'Event')">+50</button>
+
+        <h3>Mail</h3>
+        <button type="button" onclick="updateValue('subtract', 50, 'Mail', 0)">-50</button>
+        <button type="button" onclick="updateValue('subtract', 20, 'Mail', 0)">-20</button>
+        <button type="button" onclick="updateValue('subtract', 10, 'Mail', 0)">-10</button>
+        <input type="number" id="Mail" name="Mail" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 10, 'Mail')">+10</button>
+        <button type="button" onclick="updateValue('add', 20, 'Mail')">+20</button>
+        <button type="button" onclick="updateValue('add', 50, 'Mail')">+50</button>
+
+        <h3>Adventure</h3>
+        <button type="button" onclick="updateValue('subtract', 10, 'Adventure', 0)">-10</button>
+        <button type="button" onclick="updateValue('subtract', 5, 'Adventure', 0)">-5</button>
+        <button type="button" onclick="updateValue('subtract', 1, 'Adventure', 0)">-1</button>
+        <input type="number" id="Adventure" name="Adventure" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 1, 'Adventure')">+1</button>
+        <button type="button" onclick="updateValue('add', 5, 'Adventure')">+5</button>
+        <button type="button" onclick="updateValue('add', 10, 'Adventure')">+10</button>
+
+        <h3>Quests</h3>
+        <button type="button" onclick="updateValue('subtract', 10, 'Quests', 0)">-10</button>
+        <input type="number" id="Quests" name="Quests" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 10, 'Quests')">+10</button>
+
+        <h3>Achievements</h3>
+        <button type="button" onclick="updateValue('subtract', 20, 'Achievements', 0)">-20</button>
+        <button type="button" onclick="updateValue('subtract', 10, 'Achievements', 0)">-10</button>
+        <button type="button" onclick="updateValue('subtract', 5, 'Achievements', 0)">-5</button>
+        <input type="number" id="Achievements" name="Mail" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 5, 'Achievements')">+5</button>
+        <button type="button" onclick="updateValue('add', 10, 'Achievements')">+10</button>
+        <button type="button" onclick="updateValue('add', 20, 'Achievements')">+20</button>
+
+        <h3>Spiral Abyss</h3>
+        <button type="button" onclick="updateValue('subtract', 50, 'Spiral', 0)">-50</button>
+        <input type="number" id="Spiral" name="Spiral" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 50, 'Spiral')">+50</button>
+        
+        <h3>Genius Invokation TCG</h3>
+        <button type="button" onclick="updateValue('subtract', 60, 'TCG', 0)">-60</button>
+        <input type="number" id="TCG" name="TCG" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 60, 'TCG')">+60</button>
+
+        <h3>Serenitea Pot</h3>
+        <button type="button" onclick="updateValue('subtract', 20, 'Teapot', 0)">-20</button>
+        <input type="number" id="Teapot" name="Teapot" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 20, 'Teapot')">+20</button>
+
+        <h3>Hangout Series</h3>
+        <button type="button" onclick="updateValue('subtract', 20, 'Hangout', 0)">-20</button>
+        <input type="number" id="Hangout" name="Hangout" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 20, 'Hangout')">+20</button>
+
+        <h3>Game Tips/Tutorial</h3>
+        <button type="button" onclick="updateValue('subtract', 1, 'Tips', 0)">-1</button>
+        <input type="number" id="Tips" name="Tips" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 1, 'Tips')">+1</button>
+
+    </form>
 </body>
 </html>
