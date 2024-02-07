@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="author" content="Gabriel Hubert">
     <title>Home</title>
-    <script src="../JavaScript/add_minus"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JavaScript/add_minus.js"></script>
 </head>
 <body>
+    <img src="../images/primo.jpg">
     <nav>
         <a href="Home.html">Home</a>
         <a href="PrimoTable.html">Primogems Table</a>
@@ -83,6 +85,10 @@
         <input type="number" id="Tips" name="Tips" value="0" style="width: 50px;" readonly>
         <button type="button" onclick="updateValue('add', 1, 'Tips')">+1</button>
 
+        <h3>Intertwined Fates</h3>
+        <button type="button" onclick="updateValue('subtract', 1, 'Fates', 0)">-1</button>
+        <input type="number" id="Fates" name="Fates" value="0" style="width: 50px;" readonly>
+        <button type="button" onclick="updateValue('add', 1, 'Fates')">+1</button>
     </form>
 </body>
 </html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(151, 241, 255);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: rgb(119, 144, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 3px;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align: center;
+}
+
+input[type="number"]:read-only {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
