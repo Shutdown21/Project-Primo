@@ -10,3 +10,21 @@ function updateValue(operation, increment, inputId, maxValue) {
         numberInput.value = currentValue - increment;
     }
 }
+
+function displayCurrentDate() {
+    const currentDateElement = document.getElementById('currentDate');
+    const currentDate = new Date().toLocaleDateString('en-US', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    currentDateElement.textContent = currentDate;
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    displayCurrentDate();
+});
+
+// Call the function to display the current date when the page loads
+displayCurrentDate();
