@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(151, 241, 255);
     margin: 0;
     padding: 0;
+    background-image: url(../images/bg.png);
 }
 
 .container {
@@ -17,7 +17,7 @@ body {
     background-image: url('path_to_your_image.jpg');
     background-color: black;
     background-size: cover;
-    background-position: center;
+    background-position: center 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -42,4 +42,42 @@ body {
 }
 .tab-content.active {
     display: block;
+}
+.image-square {
+    width: 563px; /* Adjust size as needed */
+    height: 188px; /* Adjust size as needed */
+    margin-bottom: 10px;
+    display: inline-block;
+    background-size: cover;
+    background-position:center 25% ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Cryo {
+    background-color: #9cd4e4;
+}
+
+#Dendro {
+background-color: #a5c83b;
+}
+
+#Electro {
+    background-color: #af8ec1;
+}
+
+#Pyro {
+    background-color: #ef7938;
+}
+
+#Geo {
+    background-color: #fab632;
+}
+
+#Hydro {
+    background-color: #4cc2f1;
+}
+
+#Anemo {
+    background-color: #74c2a8;
 }

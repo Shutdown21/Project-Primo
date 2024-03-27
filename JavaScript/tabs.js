@@ -7,3 +7,6 @@ function showTab(tabNumber) {
     // Show the selected tab content
     document.getElementById('tab' + tabNumber).classList.add('active');
 }
+function changeBannerImage(imagePath) {
+    document.getElementById('banner').style.backgroundImage = 'url(' + imagePath + ')';
+}
