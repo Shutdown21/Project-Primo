@@ -1,3 +1,4 @@
+
 function showTab(tabNumber) {
     // Hide all tab contents
     document.querySelectorAll('.tab-content').forEach(tabContent => {
@@ -9,14 +10,18 @@ function showTab(tabNumber) {
 }
 function changeBannerImage(imagePath, tab) {
     var mainImage = document.getElementById('banner');
-    var currentBackgroundImage = mainImage.style.backgroundImage;
+    var computedStyle = window.getComputedStyle(mainImage);
+    var currentBackgroundImage = computedStyle.getPropertyValue('background-image');
 
     // Split the current background images into an array
     var backgroundImages = currentBackgroundImage.split(',');
-
+    backgroundImages = backgroundImages.map(function(url) {
+        return url.trim();
+    });
     // Replace the background image for the specified tab
     backgroundImages[tab - 1] = 'url(' + imagePath + ')';
 
     // Set the new background images
-    mainImage.style.backgroundImage = backgroundImages.join(',');
+    var newBackgroundImage = backgroundImages.join(',');
+    mainImage.style.backgroundImage = newBackgroundImage;
 }
