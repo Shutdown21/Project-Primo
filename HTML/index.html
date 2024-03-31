@@ -10,10 +10,10 @@
 <body>
     <div class="banner" id="banner"></div>
     <div class="tabs">
-        <div class="tab" onclick="showTab(1)">Tab 1</div>
-        <div class="tab" onclick="showTab(2)">Tab 2</div>
-        <div class="tab" onclick="showTab(3)">Tab 3</div>
-        <div class="tab" onclick="showTab(4)">Tab 4</div>
+        <div class="tab" onclick="showTab(1)">Characters</div>
+        <div class="tab" onclick="showTab(2)">Background</div>
+        <div class="tab" onclick="showTab(3)">Border</div>
+        <div class="tab" onclick="showTab(4)">Sizes</div>
     </div>
     <div class="tab-content" id="tab1">       
         <div class="image-square" id="Anemo" style="background-image: url('../images/Characters/Jean.png');" onclick="changeBannerImage('../images/Characters/Jean.png', 2);"></div>
@@ -118,6 +118,9 @@
         <!-- Add images for Tab 3 here -->
     </div>
     <div class="tab-content" id="tab4">
+        <button onclick="changeBannerSize(900, 300)">3:1</button>
+        <button onclick="changeBannerSize(750, 300)">5:2</button>
+        <button onclick="changeBannerSize(533, 300)">16:9</button>
         <!-- Add images for Tab 4 here -->
     </div>
 </body>

@@ -25,3 +25,9 @@ function changeBannerImage(imagePath, tab) {
     var newBackgroundImage = backgroundImages.join(',');
     mainImage.style.backgroundImage = newBackgroundImage;
 }
+
+function changeBannerSize(width, height) {
+    var mainImage = document.getElementById('banner');
+    mainImage.style.width = width + 'px';
+    mainImage.style.height = height + 'px';
+}
