@@ -64,30 +64,71 @@ body {
     background-position: center;
 }
 
-#Cryo {
+.image-square#Cryo {
     background-color: #9cd4e4;
 }
 
-#Dendro {
+.image-square#Dendro {
 background-color: #a5c83b;
 }
 
-#Electro {
+.image-square#Electro {
     background-color: #af8ec1;
 }
 
-#Pyro {
+.image-square#Pyro {
     background-color: #ef7938;
 }
 
-#Geo {
+.image-square#Geo {
     background-color: #fab632;
 }
 
-#Hydro {
+.image-square#Hydro {
     background-color: #4cc2f1;
 }
 
-#Anemo {
+.image-square#Anemo {
     background-color: #74c2a8;
+}
+
+#visions {
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Distribute items evenly with space around them */
+    align-items: center; /* Center items vertically */
+}
+
+.Element {
+    width: 100px; /* Set width */
+    height: 100px; /* Set height */
+    margin: 50px; /* Add some margin between elements */
+    background-size: contain; /* Ensure background image fits within the element */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    cursor: pointer;
+}
+.Element#Anemo {
+    background-color: #469c7f;
+}
+.Element#Cryo {
+    background-color: #4d8d9e;
+}
+
+.Element#Dendro {
+background-color: #78922a;
+}
+
+.Element#Electro {
+    background-color: #8e5ea9;
+}
+
+.Element#Pyro {
+    background-color: #be5f2c;
+}
+
+.Element#Geo {
+    background-color: #b87d07;
+}
+
+.Element#Hydro {
+    background-color: #2c89ad;
 }

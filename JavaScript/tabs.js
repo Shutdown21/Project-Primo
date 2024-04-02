@@ -31,3 +31,17 @@ function changeBannerSize(width, height) {
     mainImage.style.width = width + 'px';
     mainImage.style.height = height + 'px';
 }
+
+function showImages(elementId) {
+    // Hide all image squares within tab1
+    var imageSquares = document.getElementById('tab1').getElementsByClassName('image-square');
+    for (var i = 0; i < imageSquares.length; i++) {
+        imageSquares[i].style.display = 'none';
+    }
+
+    // Display only the image squares with the same ID as the clicked element
+    var imageSquare = document.getElementById('tab1').querySelectorAll('.image-square[id="' + elementId + '"]');
+    for (var j = 0; j < imageSquare.length; j++) {
+        imageSquare[j].style.display = 'block';
+    }
+}
